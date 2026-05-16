@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI & SharePoint</title>
+
+<style>
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
+.section:nth-child(1) { background: #0a2540; }
+.section:nth-child(2) { background: #1e3a8a; }
+.section:nth-child(3) { background: #2563eb; }
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.dots {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dots a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="section" id="s1">
+  <h1>AI & SharePoint</h1>
+  <p>AI becomes useful when knowledge is structured and accessible.</p>
+</div>
+
+<div class="section" id="s2">
+  <h1>SharePoint as Data Layer</h1>
+  <p>SharePoint transforms documents into structured knowledge for AI.</p>
+</div>
+
+<div class="section" id="s3">
+  <h1>AI Outcomes</h1>
+  <p>Better structure = better Copilot answers and business insights.</p>
+</div>
+
+<div class="dots">
+  <a href="#s1">•</a>
+  <a href="#s2">•</a>
+  <a href="#s3">•</a>
+</div>
+
+</body>
+</html>
